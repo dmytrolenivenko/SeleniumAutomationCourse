@@ -1,0 +1,24 @@
+[
+    {
+    "email": "awdawdawdawddawd@gmail.com",
+    "password": "QWERTY123#qwerty",
+    "productName": "ZARA COAT 3",
+    "country": "Por",
+    "heroMessage": "Thankyou for the order."
+},
+{
+    "email": "awdawdawdawddawd@gmail.com",
+    "password": "QWERTY123#qwerty",
+    "productName": "ADIDAS ORIGINAL",
+    "country": "Uru",
+    "heroMessage": "Thankyou for the order."
+},
+{
+    "email": "awdawdawdawddawd@gmail.com",
+    "password": "QWERTY123#qwerty",
+    "productName": "IPHONE 13 PRO",
+    "country": "Aus",
+    "heroMessage": "Thankyou for the order."
+}
+]
+

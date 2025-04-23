@@ -1,0 +1,8 @@
+com\omni\PageObjects\CheckOutPage.class
+com\omni\PageObjects\OrderHistoryPage.class
+com\omni\PageObjects\CatalogPage.class
+com\omni\PageObjects\ConfirmationPage.class
+com\omni\AbstractComponents\Task.class
+com\omni\AbstractComponents\AbstractComponents.class
+com\omni\PageObjects\LandingPage.class
+com\omni\PageObjects\ShoppingCart.class

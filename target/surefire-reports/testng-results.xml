@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-22T15:10:54 WEST" name="Surefire suite" finished-at="2025-04-22T15:11:23 WEST" duration-ms="29183">
+    <groups>
+      <group name="dependencies">
+        <method signature="StandAloneTest.submitOrder()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" name="submitOrder" class="com.omni.tests.StandAloneTest"/>
+      </group> <!-- dependencies -->
+    </groups>
+    <test started-at="2025-04-22T15:10:54 WEST" name="Surefire test" finished-at="2025-04-22T15:11:23 WEST" duration-ms="29183">
+      <class name="com.omni.tests.StandAloneTest">
+        <test-method signature="submitOrder()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" started-at="2025-04-22T15:10:54 WEST" name="submitOrder" finished-at="2025-04-22T15:11:13 WEST" duration-ms="18867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" started-at="2025-04-22T15:11:13 WEST" name="closeDriver" finished-at="2025-04-22T15:11:13 WEST" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method signature="orderHistory()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" started-at="2025-04-22T15:11:13 WEST" name="orderHistory" finished-at="2025-04-22T15:11:23 WEST" depends-on-methods="com.omni.tests.StandAloneTest.submitOrder" duration-ms="9405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" started-at="2025-04-22T15:11:23 WEST" name="closeDriver" finished-at="2025-04-22T15:11:23 WEST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.omni.tests.StandAloneTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
