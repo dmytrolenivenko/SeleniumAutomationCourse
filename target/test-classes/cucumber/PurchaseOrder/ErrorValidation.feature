@@ -12,3 +12,4 @@ Feature: Enter wrong email and password and verify the error
     Examples:
       | email        | password |
       | asdf@awd.com | asdf     |
+      | asdf@awd.com | asdf     |
