@@ -37,7 +37,6 @@ public class Listeners extends BaseTest implements ITestListener {
 
     @Override
     public void onTestFailedWithTimeout(ITestResult result) {
-        // TODO Auto-generated method stub
         ITestListener.super.onTestFailedWithTimeout(result);
     }
 
@@ -54,7 +53,6 @@ public class Listeners extends BaseTest implements ITestListener {
         try {
             path = getScreenshot(result.getMethod().getMethodName(), driver);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         test.addScreenCaptureFromPath(path);
@@ -62,8 +60,6 @@ public class Listeners extends BaseTest implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        // TODO Auto-generated method stub
-        //ITestListener.super.onTestStart(result);
         test = extent.createTest(result.getMethod().getMethodName());
         extentTest.set(test);
     }
