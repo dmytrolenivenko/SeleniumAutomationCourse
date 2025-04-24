@@ -1,7 +1,5 @@
 package com.omni.tests;
 
-import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -42,8 +40,8 @@ public class Listeners extends BaseTest implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        String path = null;
-        WebDriver driver = null;    
+        /* String path = null;
+        //WebDriver driver = null;    
         try {
             driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
         } catch (Exception e) {
@@ -51,11 +49,11 @@ public class Listeners extends BaseTest implements ITestListener {
         }
         extentTest.get().fail(result.getThrowable());
         try {
-            path = getScreenshot(result.getMethod().getMethodName(), driver);
+            path = getScreenshot(result.getMethod().getMethodName());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        test.addScreenCaptureFromPath(path);
+        test.addScreenCaptureFromPath(path); */
     }
 
     @Override

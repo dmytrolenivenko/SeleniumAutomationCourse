@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.omni.tests.StandAloneTest" class="method navigator-link" hash-for-method="orderHistory">orderHistory</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.omni.tests.PurchaiseVariousProducts" class="method navigator-link" hash-for-method="submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ZARA COAT 3, Por, Thankyou for the order.)">submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ZARA COAT 3, Por, Thankyou for the order.)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.omni.tests.StandAloneTest" class="method navigator-link" hash-for-method="submitOrder">submitOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.omni.tests.PurchaiseVariousProducts" class="method navigator-link" hash-for-method="submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ADIDAS ORIGINAL, Uru, Thankyou for the order.)">submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ADIDAS ORIGINAL, Uru, Thankyou for the order.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.omni.tests.PurchaiseVariousProducts" class="method navigator-link" hash-for-method="submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, IPHONE 13 PRO, Aus, Thankyou for the order.)">submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, IPHONE 13 PRO, Aus, Thankyou for the order.)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -125,21 +130,31 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.omni.tests.StandAloneTest</span>
+              <span class="class-name">com.omni.tests.PurchaiseVariousProducts</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="orderHistory">
-                  </a> <!-- orderHistory -->
-                  <span class="method-name">orderHistory</span>
+                  <a name="submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ZARA COAT 3, Por, Thankyou for the order.)">
+                  </a> <!-- submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ZARA COAT 3, Por, Thankyou for the order.) -->
+                  <span class="method-name">submitOrderWithStrings</span>
+                  <span class="parameters">(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ZARA COAT 3, Por, Thankyou for the order.)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="submitOrder">
-                  </a> <!-- submitOrder -->
-                  <span class="method-name">submitOrder</span>
+                  <a name="submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ADIDAS ORIGINAL, Uru, Thankyou for the order.)">
+                  </a> <!-- submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ADIDAS ORIGINAL, Uru, Thankyou for the order.) -->
+                  <span class="method-name">submitOrderWithStrings</span>
+                  <span class="parameters">(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ADIDAS ORIGINAL, Uru, Thankyou for the order.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, IPHONE 13 PRO, Aus, Thankyou for the order.)">
+                  </a> <!-- submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, IPHONE 13 PRO, Aus, Thankyou for the order.) -->
+                  <span class="method-name">submitOrderWithStrings</span>
+                  <span class="parameters">(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, IPHONE 13 PRO, Aus, Thankyou for the order.)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -154,9 +169,13 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;method-selectors&gt;
+      &lt;method-selector&gt;
+        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.MethodSelector&quot; priority=&quot;10000&quot;/&gt;
+      &lt;/method-selector&gt;
+    &lt;/method-selectors&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.omni.tests.BaseTest&quot;/&gt;
-      &lt;class name=&quot;com.omni.tests.StandAloneTest&quot;/&gt;
+      &lt;class name=&quot;com.omni.tests.PurchaiseVariousProducts&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -170,7 +189,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (2 classes)</span>
+                <span class="test-name">Surefire test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -181,10 +200,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">dependencies</span>
+              <span class="test-group-name">string data</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">submitOrder</span>
+                <span class="method-in-group-name">submitOrderWithStrings</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -204,20 +223,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'submitOrder')
-data.setCell(0, 2, 'com.omni.tests.StandAloneTest')
-data.setCell(0, 3, 18867);
+data.setCell(0, 1, 'submitOrderWithStrings')
+data.setCell(0, 2, 'com.omni.tests.PurchaiseVariousProducts')
+data.setCell(0, 3, 15446);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'orderHistory')
-data.setCell(1, 2, 'com.omni.tests.StandAloneTest')
-data.setCell(1, 3, 9405);
+data.setCell(1, 1, 'submitOrderWithStrings')
+data.setCell(1, 2, 'com.omni.tests.PurchaiseVariousProducts')
+data.setCell(1, 3, 15185);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'submitOrderWithStrings')
+data.setCell(2, 2, 'com.omni.tests.PurchaiseVariousProducts')
+data.setCell(2, 3, 14428);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -243,22 +266,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.omni.tests.StandAloneTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.omni.tests.PurchaiseVariousProducts</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">submitOrder</span>
+                <span class="method-name">submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ZARA COAT 3, Por, Thankyou for the order.)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">18876 ms</span>
+                <span class="method-start">15449 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">orderHistory</span>
-                <span class="method-start">19451 ms</span>
+                <span class="method-name">submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, ADIDAS ORIGINAL, Uru, Thankyou for the order.)</span>
+                <span class="method-start">15813 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">28857 ms</span>
+                <span class="method-start">30241 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">submitOrderWithStrings(awdawdawdawddawd@gmail.com, QWERTY123#qwerty, IPHONE 13 PRO, Aus, Thankyou for the order.)</span>
+                <span class="method-start">30570 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">45756 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

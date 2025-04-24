@@ -53,7 +53,7 @@ public class BaseTest {
         return data;
     }
 
-    public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
+    public String getScreenshot(String testCaseName) throws IOException {
         TakesScreenshot ts = (TakesScreenshot)driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         String folderPath = "C:/Users/dmytro.lenivenko/OneDrive - Hive Group/Desktop/Nova pasta code/SeleniumCourse/SeleniumProject1/seleniume2e/src/test/java/testData/";

@@ -1,32 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-22T15:10:54 WEST" name="Surefire suite" finished-at="2025-04-22T15:11:23 WEST" duration-ms="29183">
+  <suite started-at="2025-04-24T22:19:35 WEST" name="Surefire suite" finished-at="2025-04-24T22:20:21 WEST" duration-ms="46252">
     <groups>
-      <group name="dependencies">
-        <method signature="StandAloneTest.submitOrder()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" name="submitOrder" class="com.omni.tests.StandAloneTest"/>
-      </group> <!-- dependencies -->
+      <group name="string data">
+        <method signature="PurchaiseVariousProducts.submitOrderWithStrings(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.omni.tests.PurchaiseVariousProducts@15bfd87]" name="submitOrderWithStrings" class="com.omni.tests.PurchaiseVariousProducts"/>
+      </group> <!-- string data -->
     </groups>
-    <test started-at="2025-04-22T15:10:54 WEST" name="Surefire test" finished-at="2025-04-22T15:11:23 WEST" duration-ms="29183">
-      <class name="com.omni.tests.StandAloneTest">
-        <test-method signature="submitOrder()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" started-at="2025-04-22T15:10:54 WEST" name="submitOrder" finished-at="2025-04-22T15:11:13 WEST" duration-ms="18867" status="PASS">
+    <test started-at="2025-04-24T22:19:35 WEST" name="Surefire test" finished-at="2025-04-24T22:20:21 WEST" duration-ms="46252">
+      <class name="com.omni.tests.PurchaiseVariousProducts">
+        <test-method signature="submitOrderWithStrings(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.omni.tests.PurchaiseVariousProducts@15bfd87]" started-at="2025-04-24T22:19:35 WEST" name="submitOrderWithStrings" data-provider="getDataString" finished-at="2025-04-24T22:19:50 WEST" duration-ms="15446" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[awdawdawdawddawd@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QWERTY123#qwerty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ZARA COAT 3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Por]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Thankyou for the order.]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" started-at="2025-04-22T15:11:13 WEST" name="closeDriver" finished-at="2025-04-22T15:11:13 WEST" duration-ms="571" status="PASS">
+        </test-method> <!-- submitOrderWithStrings -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.omni.tests.PurchaiseVariousProducts@15bfd87]" started-at="2025-04-24T22:19:50 WEST" name="closeDriver" finished-at="2025-04-24T22:19:51 WEST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method signature="orderHistory()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" started-at="2025-04-22T15:11:13 WEST" name="orderHistory" finished-at="2025-04-22T15:11:23 WEST" depends-on-methods="com.omni.tests.StandAloneTest.submitOrder" duration-ms="9405" status="PASS">
+        <test-method signature="submitOrderWithStrings(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.omni.tests.PurchaiseVariousProducts@15bfd87]" started-at="2025-04-24T22:19:51 WEST" name="submitOrderWithStrings" data-provider="getDataString" finished-at="2025-04-24T22:20:05 WEST" duration-ms="14428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[awdawdawdawddawd@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QWERTY123#qwerty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Uru]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Thankyou for the order.]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orderHistory -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.omni.tests.StandAloneTest@7181ae3f]" started-at="2025-04-22T15:11:23 WEST" name="closeDriver" finished-at="2025-04-22T15:11:23 WEST" duration-ms="266" status="PASS">
+        </test-method> <!-- submitOrderWithStrings -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.omni.tests.PurchaiseVariousProducts@15bfd87]" started-at="2025-04-24T22:20:05 WEST" name="closeDriver" finished-at="2025-04-24T22:20:05 WEST" duration-ms="329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- com.omni.tests.StandAloneTest -->
+        <test-method signature="submitOrderWithStrings(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.omni.tests.PurchaiseVariousProducts@15bfd87]" started-at="2025-04-24T22:20:05 WEST" name="submitOrderWithStrings" data-provider="getDataString" finished-at="2025-04-24T22:20:21 WEST" duration-ms="15185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[awdawdawdawddawd@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QWERTY123#qwerty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[IPHONE 13 PRO]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Aus]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Thankyou for the order.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderWithStrings -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.omni.tests.PurchaiseVariousProducts@15bfd87]" started-at="2025-04-24T22:20:21 WEST" name="closeDriver" finished-at="2025-04-24T22:20:21 WEST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.omni.tests.PurchaiseVariousProducts -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

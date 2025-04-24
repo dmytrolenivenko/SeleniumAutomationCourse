@@ -18,9 +18,9 @@ public class StepDefinitionImplementation extends BaseTest {
 
     LandingPage landingPage;
     CatalogPage catalogPage;
-    ShoppingCart shoppingCart = new ShoppingCart(driver);
-    CheckOutPage checkOutPage = new CheckOutPage(driver);
-    ConfirmationPage confirmationPage = new ConfirmationPage(driver);
+    ShoppingCart shoppingCart;
+    CheckOutPage checkOutPage;
+    ConfirmationPage confirmationPage;
 
     @Given("I landed on the Main Page")
     public void i_landed_on_the_Main_Page() {
@@ -30,31 +30,32 @@ public class StepDefinitionImplementation extends BaseTest {
     @Given("^I logged with email (.+) and password (.+)$")
     public void i_logged_with_email_and_password(String email, String password) {
         catalogPage = landingPage.login(email, password);
+        shoppingCart = new ShoppingCart(driver);
+        checkOutPage = new CheckOutPage(driver);
+        confirmationPage = new ConfirmationPage(driver);
     }
 
     @When("^I added product (.+) to Cart$")
     public void i_added_product_to_Cart(String productName) {
+        catalogPage.getProductList();
         catalogPage.addToCart(productName);
     }
 
-    @And("^I Checkout (.+) and submit the order$")
-    public void i_Checkout_and_submit_the_orders(String productName) {
-        catalogPage.getProductList();
-        catalogPage.addToCart(productName);
+    @And("^I Checkout (.+) and submit the order in (.+)$")
+    public void i_Checkout_and_submit_the_orders(String productName, String country) {
         shoppingCart.goToCart();
         shoppingCart.checkOutButtonClick();
-        //checkOutPage.checkOut(country);
+        checkOutPage.checkOut(country);
         checkOutPage.placeOrderClick();
     }
 
-    @Then("The message {heroMessage} is displayed")
-    public void the_message_is_displayed(String heroMessage) {
-        Assert.assertEquals(confirmationPage.getHeroMessage().toLowerCase(), heroMessage.toLowerCase());
+    @Then("^The message 'THANK YOU FOR THE ORDER.' is displayed$")
+    public void the_message_is_displayed() {
+        Assert.assertEquals(confirmationPage.getHeroMessage().toLowerCase(), "thank you for the order.");
     }
 
     @Then("Error message 'Incorrect email or password.' displayed")
     public void error_message_displayed() {
         Assert.assertEquals(landingPage.getErrorMessage(), "Incorrect email or password.");
     }
-
 }
